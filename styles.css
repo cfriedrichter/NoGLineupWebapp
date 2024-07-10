@@ -1,0 +1,126 @@
+body {
+  background-color: #F7442C;
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5em; /* Erhöhen des Zeilenabstands */
+  font-size: 16px; /* Grundgröße für Desktops */
+  padding-top: env(safe-area-inset-top); /* Sicherstellen, dass der Inhalt nicht hinter der Notch liegt */
+}
+a {
+  color: #b9ceff;
+  text-decoration: none;
+}
+button {
+  background-color: #fff;
+  color: #F7442C;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: "Rubik Mono One", monospace;
+  margin: 10px;
+}
+button:hover {
+  background-color: #ddd;
+}
+.center {
+  text-align: center;
+}
+.sticky-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #F7442C;
+  padding: 10px 0;
+  z-index: 1000;
+}
+.artist {
+  margin: 10px 0;
+  word-break: break-word; /* Sicherstellen, dass lange Wörter umgebrochen werden */
+}
+.heart {
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 1.5em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: transparent;
+  position: relative;
+}
+.heart::before {
+  content: '♡'; /* Standard-Herz-Symbol */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black; /* Farbe des Standard-Herzens */
+}
+
+.heart.favorited::before {
+  content: '♥'; /* Favoriten-Herz-Symbol */
+  color: black; /* Farbe des Favoriten-Herzens */
+}
+@media (max-width: 1200px) {
+  body {
+    font-size: 14px; /* Schriftgröße für Tablets */
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 12px; /* Schriftgröße für Mobilgeräte im Querformat */
+  }
+  button {
+    padding: 8px 16px; /* Verkleinere die Schaltflächen für Mobilgeräte */
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 10px; /* Schriftgröße für Mobilgeräte im Hochformat */
+  }
+  button {
+    padding: 6px 12px; /* Verkleinere die Schaltflächen für kleinere Mobilgeräte */
+  }
+}
+.popup {
+  display: none; /* Standardmäßig ausblenden */
+  position: fixed;
+  z-index: 1001; /* Über dem Header */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #F7442C;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
