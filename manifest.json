@@ -1,7 +1,7 @@
 {
   "name": "NATION OF GONDWANA 2024",
   "short_name": "NoG2024",
-  "start_url": "NoG-Lineup_Webapp.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#F7442C",
   "theme_color": "#F7442C",
