@@ -16,7 +16,7 @@ This is a non commercial educational funproject to get into WebApps and Ai-Drive
    • Research Artist Info
    • Research Artist Profile Links
 
-#NOTE: 
+# NOTE: 
 This is not an official product of the Nation of Gondwana Festival or any of their associated companies/partners. This WebApp is made by fans for fans.
 User at your own risk.
 
