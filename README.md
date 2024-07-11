@@ -6,7 +6,7 @@ This is a non commercial educational funproject to get into WebApps and Ai-Drive
 1. Sort the artists of the lineup 
 2. Click Artist to get to their SoundCloud profiles 
 3. Add favorites to your list
-4. iOS: Safe WebApp to homescreen
+4. iOS: Save WebApp to homescreen
 
 # Wishlist/Comming Soon
 1. Scheduling Feature
