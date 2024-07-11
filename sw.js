@@ -1,8 +1,12 @@
 const cacheName = 'NoG2024-v1';
 const assetsToCache = [
   '/',
-  '/NoG-Lineup_Webapp.html',
+  '/index.html',
   '/manifest.json',
+  '/styles.css',
+  '/artists.csv',
+  '/icon_192.png',
+  '/icon.png',
   // Add all your other files here like CSS, JS, images
 ];
 
